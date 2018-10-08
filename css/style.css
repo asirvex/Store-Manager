@@ -59,26 +59,108 @@
     float: right;
   }
 
+
 .column {
     box-sizing: border-box;
-    margin-left: 1%;
     background-color: #FFF;
     float: left;
-    padding: 10px;
-    height:  100%;
+    padding: 10px 10px;
+    height:  auto;
     width: 100%;
 }
 
-.left, .right {
-    width: 22%;
+.left {
+  width: 22%;
+  margin-left: -10px;
+}
+
+.right {
+  width: 22%;
+  margin-left: 1px;
 }
 
 .middle {
   width: 52%;
+  margin-left: 1%;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  align-content: left;
+  content: inherit;
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 2px 1px;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+.flex-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+  background-color: #eee;
+  align-items: center;
+}
+
+.item {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 30%;
+  background-color: #fff;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+label {
+  color: #444;
+  font-size: 26px;
+  cursor: default;
+}
+
+.add-btn {
+  width: 100%;
+  background-color: #3B48C4;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.add-btn:hover {
+  background-color: dodgerblue;
 }
