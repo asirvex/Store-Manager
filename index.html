@@ -11,7 +11,7 @@
       <a href="index.html" class="logo">Store Manager</a>
       <div class="topnav-right">
         <a class="active" href="index.html">Home</a>
-        <a href="login.html">log in</a>
+        <a href="login.html">Log Out</a>
         <a href=""></a>
       </div>
     </div>
@@ -21,8 +21,8 @@
   <div class="column left">
     
     <div class="sidebar">
-      <a href="#about">All</a>
-      <a class="active" href="">Phones</a>
+      <a href="#about" onclick="showAll()">All</a>
+      <a class="active" >Phones</a>
       <a href="#news">Clothes</a>
       <a href="#contact">Computing</a>
       <a href="#about">Furniture</a>
@@ -32,40 +32,48 @@
 
 
   <div class="column middle">
-    <h2>Phones</h2>
-    <div class="flex-container">
-      <div class="item">
-        <img src="/images/samsung-galaxy-s9.jpg" class="center" width="98%" height="180">
-        <label for="phone">Galaxy S9</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
-      </div>
-      <div class="item">
-        <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
-        <label for="phone">Generic phone</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
-      </div>
-      <div class="item">
-        <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
-        <label for="phone">Generic Phone</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
-      </div>
-      <div class="item">
-        <img src="/images/iphone.jpg" class="center" width="98%" height="180">
-        <label for="phone">iPhone X</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
-      </div>
-      <div class="item">
-        <img src="/images/iphone.jpg" class="center" width="98%" height="180">
-        <label for="phone">iPhone X</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
-      </div>
-      <div class="item">
-        <img src="/images/iphone.jpg" class="center" width="98%" height="180">
-        <label for="phone">iPhone X</label>
-        <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+    <div id = "phones">
+      <h2>Phones</h2>
+      <div class="flex-container">
+        <div class="item">
+          <img src="/images/samsung-galaxy-s9.jpg" class="center" width="98%" height="180">
+          <label for="phone">Galaxy S9</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/samsung-galaxy-s9.jpg" class="center" width="98%" height="180">
+          <label for="phone">Galaxy S9 - price</label>
+          <label for="phone"></label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
+          <label for="phone">Generic phone</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
+          <label for="phone">Generic Phone</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
       </div>
     </div>
-
+    
   </div>
   <div class="column right">
     <div class="cart">
@@ -98,6 +106,6 @@
     </div>
   </div>
 </div>
-
+<script src="/js/script.js"></script>
 </body>
 </html>
