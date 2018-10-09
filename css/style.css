@@ -276,3 +276,27 @@ td {
   background-color: #4CAF50;
   color: #020f08;
 }
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container div{
+  width:500px;
+  height: 120px;
+}
+
+.forms {
+  background: #ddf;
+  width: 480px;
+  height: auto;
+  font-size: 18px;
+  padding: 20px 20px; 
+  align-content: center;
+  box-shadow: 0 0 0 1pt #7F4145;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+}
