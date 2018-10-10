@@ -1,5 +1,6 @@
 .body{
   margin-top: 68px;
+  background-color: #fff;
 }
 
 .header {
@@ -8,7 +9,6 @@
     padding: 14px 14px;
     width: 100%;
     position: fixed;
-    margin: 0;
     top: 0;
     z-index: 99;
   }
@@ -178,18 +178,23 @@
   align-items: center;
 }
 @media screen and (max-width: 500px) {
-  .flex-container{
-    flex-direction: column;
+  .flex-container div{
+  min-width: 180px;
   }
 }
 
 .item {
-  margin-top: 2%;
+  margin-top: 5px;
   margin-left: 2%;
-  width: 150px;
+  width: 180px;
   background-color: #fff;
-  font-size: 13px;
+  font-size: 18px;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   min-width: 100px;
+}
+
+.item div{
+  flex-direction: row;
 }
 @media screen and (max-width: 500px) {
   .item{
@@ -279,13 +284,18 @@ td {
 
 .form-container {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: #020f08;
+  padding-top: 80px;
 }
 
 .form-container div{
   width:500px;
-  height: 120px;
+  height: 200px;
+  min-width: 250px;
 }
 
 .forms {
@@ -293,10 +303,33 @@ td {
   width: 480px;
   height: auto;
   font-size: 18px;
+  margin-top: 100px;
   padding: 20px 20px; 
   align-content: center;
   box-shadow: 0 0 0 1pt #7F4145;
-  border-radius: 1px;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 5px #555;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=text], input[type=password]{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 4px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+input[type=select]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 50%;
+  height: 20px;
+  padding: 4px 8px;
+}
+
+.select{
+  width: 80px;
+  border: 1px 2px #020f08;
 }

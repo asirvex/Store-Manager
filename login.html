@@ -5,14 +5,28 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="body">
+    <div class="header">
+        <div class="topnav" >
+            <a href="index.html" class="logo">Store Manager</a>
+            <div class="topnav-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Log Out</a>
+            <a href=""></a>
+            </div>
+        </div>
+    </div>
     <div class="form-container">
         <form>
             <div class="forms">
                 <label for="employeeId">Employee ID</label>
                 <input type="text" placeholder="Employee Id" name="employeeId" required>
-                <label for="password">password</label>
+                <label for="password">Password</label>
                 <input type="password" placeholder="password" name="password" required>
+                <select name="user-type" class="select">
+                    <option value="attendant">User</option>
+                    <option value="admin">Admin</option>
+                </select>
             </div>
         </form>
     </div>
