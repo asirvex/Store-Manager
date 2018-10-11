@@ -4,7 +4,9 @@
 }
 
 @media screen and (max-width: 500px) {
-  margin-top: 120px;
+  .body{
+    margin-top: 220px;
+  }
 }
 
 .header {
@@ -183,14 +185,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: auto;
+  height: 410px;
+  overflow-y: auto;
   background-color: #eee;
   align-items: center;
 }
 
 @media screen and (max-width: 500px) {
   .flex-container div{
-  min-width: 180px;
+    margin-top: 200px;
+    min-width: 180px;
   }
 }
 
@@ -441,6 +445,12 @@ tr:nth-child(even) {
   -webkit-animation-duration: 0.3s;
   animation-name: animatetop;
   animation-duration: 0.4s
+}
+
+@media screen and (max-width: 600px){
+  .modal-content{
+  width: 95%;
+  }
 }
 
 .modal-content h2{
