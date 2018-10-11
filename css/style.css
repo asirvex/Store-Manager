@@ -1,6 +1,10 @@
 .body{
-  margin-top: 68px;
+  margin-top: 80px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  margin-top: 120px;
 }
 
 .header {
@@ -79,6 +83,7 @@
       flex-direction: column;
     }
     .topnav-right{
+      padding-right: 15px; 
       float: left;
     }
   }
@@ -352,3 +357,46 @@ input[type=select]{
 .login-btn:hover{
   color: #000;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  outline: 1px solid #444;
+  table-layout: unset;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-decoration-color: #444;
+}
+
+th{
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #222;
+  text-decoration-line: underline;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-container{
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  font-size: 16px;
+  width:  100%;
+  background-color: #fff;
+  align-content: right;
+  text-align: center;
+  justify-content: right;
+}
+
+.table-container h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+}
+

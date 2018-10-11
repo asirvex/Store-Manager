@@ -11,3 +11,7 @@ function showPhones(){
     let ph = document.getElementById("phones");
     show(ph)
 }
+
+function goBack() {
+    window.history.back();
+}
