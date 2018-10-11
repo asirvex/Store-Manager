@@ -340,7 +340,7 @@ td {
   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password], input[type=number]{
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 4px 10px;
@@ -359,6 +359,12 @@ input[type=select]{
   width: 80px;
   border: 1px 2px #020f08;
   padding: 2px 4px;
+}
+
+.select-category{
+  width: auto;
+  border: 2px 2px #020f08;
+  padding: 4px 4px;
 }
 
 .login-btn{
