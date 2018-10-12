@@ -553,3 +553,16 @@ tr:nth-child(even) {
 #all{
   display: block;
 }
+
+.sidebar input[type=text]{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  padding: 4px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.sidebar button{
+  padding: 4px 10px;
+  height: 27px;
+}
