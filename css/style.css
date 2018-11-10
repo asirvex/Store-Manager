@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .body{
   margin-top: 68px;
   background-color: #fff;
@@ -357,3 +358,674 @@ input[type=select]{
 .login-btn:hover{
   color: #000;
 }
+=======
+.body{
+  margin-top: 80px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .body{
+    margin-top: 220px;
+  }
+}
+
+.bodywrapper{
+  flex: 1 0 auto;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #3B48C4;
+    padding: 14px 14px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .header a {
+    float: left;
+    color: #fff;
+    background-color: #3B48C4;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Zorus Serif, Futura, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .header a:hover {
+    background-color: #fff;
+    color: #3B48C4;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header{
+      display: flex;
+      flex-direction: column
+    }
+  }
+
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .header a.active:hover {
+    background-color: white;
+    color: #3B48C4;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  .topnav {
+    width: 100%;
+    background-color: #3B48C4;
+    overflow: hidden;
+    font-size: 24px;
+  }
+  
+  .topnav-right{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: right;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .topnav{
+      display: flex;
+      flex-direction: column;
+    }
+    .topnav-right{
+      padding-right: 15px; 
+      float: left;
+    }
+  }
+
+.column {
+    box-sizing: border-box;
+    background-color: #FFF;
+    display: block;
+    float: left;
+    padding: 10px 10px;
+    height:  auto;
+}
+
+.left {
+  width: 22%;
+  margin-left: -10px;
+}
+
+.right {
+  width: 22%;
+  margin-left: 1px;
+}
+
+.middle {
+  width: 52%;
+  margin-left: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .right{
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+  }
+}
+
+.row:after {
+  align-content: left;
+  content: inherit;
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  margin: 0;
+  font-family:  Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2px 1px;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: auto;
+  overflow: auto;
+  z-index: 3;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 500px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+.phones{
+  display: none;
+}
+
+.flex-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 410px;
+  overflow-y: auto;
+  background-color: #eee;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .flex-container div{
+    margin-top: 200px;
+    min-width: 180px;
+  }
+}
+
+.item {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 120px;
+  background-color: #fff;
+  font-size: 18px;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 100px;
+}
+
+.item div{
+  flex-direction: row;
+}
+@media screen and (max-width: 500px) {
+  .item{
+    width: 100%;
+  }
+}
+
+.detailstext{
+  width: 98%;
+  height: 35px;
+  font-size: 16px;
+  font-stretch: condensed;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+label {
+  color: #444;
+  font-size: 26px;
+  cursor: default;
+}
+
+.add-btn {
+  width: 100%;
+  background-color: #3B48C4;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: dodgerblue;
+}
+
+.cart{
+	float: left;
+  margin-top: 40px; 
+	background-color: #f1f1f1; 
+	opacity:0.98;
+  padding:12px;
+  width: 20%;
+  margin-left: 2%;
+  outline: 2px solid #444; 
+  text-align: center;
+  position: fixed;
+}
+
+.cart tr:last-child { 
+    background: #ccc; 
+    font-weight: bold;
+}
+
+table{
+  width: 100%;
+  align-content: center;
+  outline:1px solid #888;
+}
+
+th {
+  height: 50px;
+  text-align: center;
+  padding: 2px;
+  border-bottom: 1px solid #555;
+}
+
+td {
+  text-align: center;
+  padding: 12px;
+  
+}
+
+.cart-btn {
+  width: 60%;
+  background-color: rgb(60, 158, 64);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.cart-btn:hover {
+  background-color: #4CAF50;
+  color: #020f08;
+}
+
+.form-container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: #020f08;
+  padding-top: 60px;
+}
+
+.form-container div{
+  width:500px;
+  height: 210px;
+  min-width: 250px;
+  margin-top: 50px;
+}
+
+.forms {
+  background: #ddf;
+  width: 480px;
+  height: auto;
+  font-size: 18px;
+  padding: 20px 20px; 
+  align-content: center;
+  box-shadow: 0 0 0 1pt #7F4145;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px #555;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=text], input[type=password], input[type=number]{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 4px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+input[type=select]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 50%;
+  height: 20px;
+  padding: 4px 8px;
+}
+
+.select{
+  width: 80px;
+  border: 1px 2px #020f08;
+  padding: 2px 4px;
+}
+
+.select-category{
+  width: auto;
+  border: 2px 2px #020f08;
+  padding: 4px 4px;
+}
+
+.login-btn{
+  width: 30%;
+  background-color: #458042;
+  border: none;
+  color: white;
+  align-self: left;
+  margin-top: 4px; 
+  padding: 12px 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.login-btn:hover{
+  color: #000;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  outline: 1px solid #444;
+  table-layout: unset;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-decoration-color: #444;
+}
+
+th{
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #222;
+  text-decoration-line: underline;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-container{
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  font-size: 16px;
+  width:  100%;
+  background-color: #fff;
+  align-content: right;
+  text-align: center;
+  justify-content: right;
+}
+
+.table-container h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.3s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@media screen and (max-width: 600px){
+  .modal-content{
+  width: 95%;
+  }
+}
+
+.modal-content h2{
+  align-content: center;
+}
+
+.modal-content h3{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+  padding: 1px 8px;
+  background-color: rgb(53, 59, 117);
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color:  rgb(53, 59, 117);
+  color: white;
+
+}
+
+.modal-addbtn {
+  width: 30%;
+  background-color: rgba(53, 59, 117, 0.541);
+  border-color: #020f08;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-container{
+  display: block;
+  width: 70%;
+  margin-left: 20%; 
+  height: 480px;
+}
+
+.admin-container div{
+  margin-left: 20%;
+}
+
+.admin-container h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.editablerecords{
+  width: 70%; 
+}
+
+#all{
+  display: block;
+}
+
+.sidebar input[type=text]{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  padding: 4px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.sidebar button{
+  padding: 4px 10px;
+  height: 27px;
+}
+
+.loginBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 40px;
+  background: rgba(47, 42, 90, 0.788);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.753);
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 600px){
+  .loginBox{
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+.loginBox h1{
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.loginBox h3{
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 14px;
+  font-family: cursive;
+  color: rgb(143, 34, 34);
+  text-align: center;
+}
+
+
+.loginBox .inputBox{
+  position: relative;
+}
+
+.loginBox .inputBox input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16.px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent; 
+}
+
+.loginBox .inputBox label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size:14px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.loginBox .inputBox input:focus ~ label,
+.loginBox .inputBox input:valid ~ label{
+  top: -18px;
+  left: 0;
+  color: rgb(221, 124, 59);
+  font-size: 17px;
+}
+
+.loginBox .login-btn
+{
+  background: transparent;
+  border: none;
+  color: #fff;
+  background: rgb(226, 112, 35);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer{
+  font-size: 12px;
+  font-family: fantasy;
+  width: 90%;
+  padding: 5px 5%; 
+  margin-top: 12px;
+  color: #fff;
+  background-color: rgba(56, 52, 100, 0.952);
+  box-shadow: 0px -1px 3px 1px chocolate, 0 5px 20px 0 rgba(7, 9, 165, 0.19);
+  text-align: center;
+  flex-shrink: 0;
+}
+>>>>>>> Stashed changes
