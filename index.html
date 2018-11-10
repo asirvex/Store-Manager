@@ -1,0 +1,151 @@
+<<<<<<< Updated upstream
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+  <div class="header">
+    <div class="topnav" >
+      <a href="index.html" class="logo">Store Manager</a>
+      <div class="topnav-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="login.html">Log Out</a>
+        <a href=""></a>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column left">
+    
+    <div class="sidebar">
+      <a href="#about" onclick="showAll()">All</a>
+      <a class="active" onclick="showPhones()">Phones</a>
+      <a href="#news">Clothes</a>
+      <a href="#contact">Computing</a>
+      <a href="#about">Furniture</a>
+    </div>
+
+  </div>
+
+
+  <div class="column middle">
+    <div id = "phones">
+      <h2>Phones</h2>
+      <div class="flex-container">
+        <div class="item">
+
+          <img src="/images/samsung-galaxy-s9.jpg" class="center" width="98%" height="180">
+          <label or="phone">Galaxy S9 - Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/samsung-galaxy-s9.jpg" class="center" width="98%" height="150">
+          <label for="phone">Galaxy S9 - Ksh 80000</label>
+          <label for="phone"> Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
+          <label for="phone"></label>
+          <p div id="label"> Generic phone - Ksh 80000</p>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/phonegeneric.jpg" class="center" width="98%" height="180">
+          <label for="phone">Generic Phone Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+        <div class="item">
+          <img src="/images/iphone.jpg" class="center" width="98%" height="180">
+          <label for="phone">iPhone X Ksh 80000</label>
+          <button class="add-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="column right">
+    <div class="cart">
+      <label for="item">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i> Ksh 80000</label>
+        <table>
+          <th>Item</th>
+          <th>Price</th>
+          <tr>
+          <td>Item1</td>
+          <td>Ksh. 100</td>
+          </tr>
+          <tr>
+          <td>Item2</td>
+          <td>Ksh. 100</td>
+          </tr>
+          <tr>
+              <td>Item3</td>
+              <td>Ksh. 160</td>
+          </tr>
+          <tr id="total">
+          <td>Total</td>
+          <td>Ksh. 360</td>
+          </tr>
+      </table>
+      <p></p>
+      <button type="submit" class="cart-btn"> order items </button>
+      <form>
+
+      </form>
+    </div>
+  </div>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="bodywrapper">
+        <div class="header">
+            <div class="topnav" >
+              <a href="index.html" class="logo">Store Manager</a>
+            </div>
+          </div> 
+
+        <div class="loginBox">
+            <div id = "login-title">
+                <h1>Login</h1>
+            </div>
+            <form id="login-fm" method="GET" action="Submit">
+                <div class="inputBox">
+                    <input type="text" name="" id="username" required="">
+                    <label for="Username">Username</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="pwd" name="" required minlength="6">
+                    <label for="Password">Password</label>
+                </div>
+                <button class="login-btn" id="login-btn" value="Submit">Log In</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
+>>>>>>> Stashed changes

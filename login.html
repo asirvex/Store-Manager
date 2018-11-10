@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+    <div class="header">
+        <div class="topnav" >
+            <a href="index.html" class="logo">Store Manager</a>
+            <div class="topnav-right">
+            <a href="Contact Admin">Contact Admin</a>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <form>
+            <div class="forms">
+                <label for="employeeId">Employee ID</label>
+                <input type="text" placeholder="Employee Id" name="employeeId" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" name="password" required>
+                <select name="user-type" class="select">
+                    <option value="attendant">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button class="login-btn">log in <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

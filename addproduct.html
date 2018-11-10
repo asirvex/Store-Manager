@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+  <div class="header">
+    <div class="topnav" >
+      <a href="index.html" class="logo">Store Manager</a>
+      <div class="topnav-right">
+        <a href="index.html">Log Out</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+        <div class="column left">
+          
+          <div class="sidebar">
+            <a href="admin.html">Create New User</a>
+            <a href="editrecords.html">Sale Records</a>
+            <a class="active">Create New Product</a>
+            <a href="#news">Modify Existing Product</a>
+           
+          </div>
+      
+        </div>
+    </div>
+
+    <div class="admin-container">
+        <form>
+            <div class="forms">
+                <h2>Add a New Product</h2>
+                <label for="product-name">Name</label>
+                <input type="text" placeholder="Name" name="employeeId" required>
+                <label for="second-name">Minimum allowed</label>
+                <input type="number" placeholder="0" name="employeeId" required>
+                <label for="employeeId">Product ID</label>
+                <input type="text" placeholder="Employee Id" name="employeeId" required>
+                <label for="employeeId">Category</label>
+                <select name="user-type" class="select-category">
+                    <option value="Computing">Computing</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Funiture">Funiture</option>
+                    <option value="Clothes">Clothes</option>
+                </select>
+                
+                <button class="login-btn"><i class="fa fa-save"></i> Save </i></button>
+            </div>
+        </form>
+    </div>
+    
+
+
+
+</body>
+</html>
