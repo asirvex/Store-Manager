@@ -28,7 +28,17 @@ function postProduct(e){
     .then(data => {
         console.log(data);
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+        if (error.message === "invalid token"){
+            msg = "please log in again"
+        } else {
+            msg = error.message
+        }
+        document.getElementById("add-product-title").innerHTML = 
+        `<h1>Add a New Product</h1>
+        <h3>${msg}<h3>        
+        `
+    });
     // .catch(error => document.getElementById("add-product-title").innerHTML = 
     //                             `<h1>Add product</h1>
     //                             <h3>${error.message}</h3>`);

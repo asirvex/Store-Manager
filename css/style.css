@@ -333,7 +333,7 @@ td {
 
 .forms {
   background: rgba(48, 43, 97, 0.863);
-  width: 450px;
+  width: 480px;
   height: auto;
   font-size: 18px;
   padding: 18px 18px; 
@@ -348,6 +348,8 @@ td {
 
 .forms h1, h2, h3{
   color: #fff;
+  text-align: left;
+  margin-left: -20px;
 }
 
 .forms label{
@@ -581,11 +583,9 @@ tr:nth-child(even) {
   margin-left: 20%;
 }
 
-.admin-container h2{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 24px;
-  text-align: center;
-  font-weight: 600;
+.admin-container h3{
+  color: rgb(145, 30, 30);
+  font-size: 17px;
 }
 
 .editablerecords{

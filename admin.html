@@ -31,29 +31,30 @@
     </div>
 
     <div class="admin-container">
-        <form>
+        <form id="adduser-fm">
             <div class="forms">
-                <h2>Add a New User</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" placeholder="First Name" name="employeeId" required>
-                <label for="second-name">Second Name</label>
-                <input type="text" placeholder="Second Name" name="employeeId" required>
-                <label for="employeeId">Employee ID</label>
-                <input type="text" placeholder="Employee Id" name="employeeId" required>
-                <label for="employeeId">Department</label>
-                <input type="text" placeholder="Department" name="employeeId" required>
-                <select name="user-type" class="select">
-                    <option value="attendant">User</option>
-                    <option value="admin">Admin</option>
+                <div id="adduser-title">
+                    <h2>Add a New User</h2>
+                </div>
+                <label for="username">username</label>
+                <input type="text" placeholder="username" id="username" required="">
+                <label for="firstname">firstname</label>
+                <input type="text" placeholder="firstname" id="firstname" required="">
+                <label for="secondname">secondname</label>
+                <input type="text" placeholder="secondname" id="secondname" required="">
+                <label for="password">password</label>
+                <input type="password" placeholder="password" id="password" required minlength="6">
+                <select id="usertype" name="type" class="select">
+                    <option value="attendant">attendant</option>
+                    <option value="admin">admin</option>
                 </select>
                 
                 <button class="login-btn"><i class="fa fa-save"></i> save</i></button>
+                <div id="msg"></div>
             </div>
         </form>
     </div>
     
-
-
-
+    <script src="js/adduser.js"></script>
 </body>
 </html>
