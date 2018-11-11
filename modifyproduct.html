@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+  <div class="header">
+    <div class="topnav" >
+      <a href="index.html" class="logo">Store Manager</a>
+      <div class="topnav-right">
+        <a href="index.html">Log Out</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+        <div class="column left">
+          <div class="sidebar">
+            <a href="admin.html">Create New User</a>
+            <a href="editrecords.html">Sale Records</a>
+            <a href="addproduct.html">Create New Product</a>
+            <a class="active" href="modifyproduct.html">Modify Existing Product</a>
+          </div>
+        </div>
+
+        <div class="column middle">
+            <div id = "all">
+
+            </div>
+        </div>
+        
+    <div class="column right">
+        <div class="admin-container">
+            <form id="edit-product-fm" method="GET" action="Submit">
+                <div class="forms">
+                    <div id="add-product-title">
+                        <h2>Add a New Product</h2>
+                    </div>
+                    <label for="name">name</label>
+                    <input type="text" placeholder="name" id="product-name" required="">
+                    <label for="description">description</label>
+                    <input type="text" placeholder="description" id="description" required="">
+                    <label for="quantity">quantity</label>
+                    <input type="text" placeholder="00" id="quantity" required="">
+                    <label for="price">price</label>
+                    <input type="text" placeholder="00" id="price" required="">
+                    <label for="category">select-category</label>
+                    <select id="category" class="select-category">
+                        <option value="computing">Computing</option>
+                        <option value="phone">Phone</option>
+                        <option value="funiture">Funiture</option>
+                        <option value="clothes">Clothes</option>
+                    </select>
+                    
+                    <button class="login-btn" id="edit-btn" value="Submit">edit</button>
+                    <div id="msg"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/editproduct.js"></script>
+</body>
+</html>
