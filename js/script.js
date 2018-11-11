@@ -1,51 +1,36 @@
-<<<<<<< Updated upstream
-function showAll(){
-    let el = document.getElementById("phones");
-    el.style.display = "none"
-}
+// function showAll(){
+//     let el = document.getElementById("phones");
+//     el.style.display = "none";
+//     let all = document.getElementById("all");
+//     all.style.display ="block";
+// }
 
-function show(el){
-    el.style.display = "inline"
-}
+// function show(el){
+//     el.style.display = "inline";
+// }
 
-function showPhones(){
-    let ph = document.getElementById("phones");
-    show(ph)
-}
-=======
-function showAll(){
-    let el = document.getElementById("phones");
-    el.style.display = "none";
-    let all = document.getElementById("all");
-    all.style.display ="block";
-}
+// function showPhones(){
+//     let all = document.getElementById("all");
+//     all.style.display ="none";
+//     let ph = document.getElementById("phones");
+//     show(ph)
+// }
 
-function show(el){
-    el.style.display = "inline";
-}
+// function goBack() {
+//     window.history.back();
+// }
 
-function showPhones(){
-    let all = document.getElementById("all");
-    all.style.display ="none";
-    let ph = document.getElementById("phones");
-    show(ph)
-}
-
-function goBack() {
-    window.history.back();
-}
-
-// Get the modal
+document.getElementById("addbtn").addEventListener
+("click", openModal)
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("addbtn");
+// var btn = document.getElementById("addbtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
+function openModal() {
     modal.style.display = "block";
 }
 
@@ -60,4 +45,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
->>>>>>> Stashed changes
