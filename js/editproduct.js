@@ -6,6 +6,7 @@ let productid
 
 function getAllProducts(e){
     e.preventDefault()
+    document.getElementById("edit-product-fm").style.display = "none"
     fetch('http://127.0.0.1:5000/api/v2/products', {
         method: 'GET',
         headers: {
@@ -55,6 +56,7 @@ function getAllProducts(e){
 }
 
 function toEdit(productname){
+    document.getElementById("edit-product-fm").style.display = "block"
     let name = productname
     let prd
     for(prd in products){
