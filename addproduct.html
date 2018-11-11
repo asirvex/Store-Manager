@@ -18,43 +18,45 @@
 
   <div class="row">
         <div class="column left">
-          
           <div class="sidebar">
             <a href="admin.html">Create New User</a>
             <a href="editrecords.html">Sale Records</a>
             <a class="active">Create New Product</a>
             <a href="#news">Modify Existing Product</a>
-           
           </div>
-      
         </div>
-    </div>
-
-    <div class="admin-container">
-        <form>
-            <div class="forms">
-                <h2>Add a New Product</h2>
-                <label for="product-name">Name</label>
-                <input type="text" placeholder="Name" name="employeeId" required>
-                <label for="second-name">Minimum allowed</label>
-                <input type="number" placeholder="0" name="employeeId" required>
-                <label for="employeeId">Product ID</label>
-                <input type="text" placeholder="Employee Id" name="employeeId" required>
-                <label for="employeeId">Category</label>
-                <select name="user-type" class="select-category">
-                    <option value="Computing">Computing</option>
-                    <option value="Phone">Phone</option>
-                    <option value="Funiture">Funiture</option>
-                    <option value="Clothes">Clothes</option>
-                </select>
-                
-                <button class="login-btn"><i class="fa fa-save"></i> Save </i></button>
-            </div>
-        </form>
+        
+    <div class="column middle">
+        <div class="admin-container">
+            <form id="add-product-fm" method="GET" action="Submit">
+                <div class="forms">
+                    <div id="add-product-title">
+                    <h2>Add a New Product</h2>
+                    </div>
+                    <label for="name">name</label>
+                    <input type="text" placeholder="name" id="product-name" required="">
+                    <label for="description">description</label>
+                    <input type="text" placeholder="description" id="description" required="">
+                    <label for="quantity">quantity</label>
+                    <input type="text" placeholder="00" id="quantity" required="">
+                    <label for="price">price</label>
+                    <input type="text" placeholder="00" id="price" required="">
+                    <label for="category">select-category</label>
+                    <select id="category" class="select-category">
+                        <option value="computing">Computing</option>
+                        <option value="phone">Phone</option>
+                        <option value="funiture">Funiture</option>
+                        <option value="clothes">Clothes</option>
+                    </select>
+                    
+                    <button class="login-btn" id="login-btn" value="Submit"><i class="fa fa-save"></i> add </i></button>
+                </div>
+            </form>
+        </div>
     </div>
     
 
 
-
+    <script src="js/addproducts.js"></script>
 </body>
 </html>

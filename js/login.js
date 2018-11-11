@@ -19,7 +19,12 @@ function login(e){
     .then(handleResponse)
     .then(data => {
         token = data.token;
+        localStorage.setItem("token", token)
+        if (username === "super_admin"){
+            window.location.href = "addproduct.html"
+        } else{
         window.location.href = "products.html";
+    }
     })
     .catch(error => document.getElementById("login-title").innerHTML = `
         <h1>login</h1>
@@ -28,7 +33,7 @@ function login(e){
     function handleResponse(response) {
         return response.json()
           .then(json => {
-            if (response.ok) {
+              if (response.ok) {
               return json
             } else {
               return Promise.reject(json)
@@ -38,3 +43,5 @@ function login(e){
     }
 
 }
+console.log(token)
+localStorage.setItem("token", token)
