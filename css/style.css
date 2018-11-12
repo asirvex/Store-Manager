@@ -299,14 +299,17 @@ label {
 table{
   width: 100%;
   align-content: center;
-  outline:1px solid #888;
+  outline:1px solid #444;
+  box-shadow: 0 15px 25px rgba(0, 5, 0, 0.308);
 }
 
 th {
   height: 50px;
   text-align: center;
   padding: 2px;
-  border-bottom: 1px solid #555;
+  color: #fff;
+  background: rgb(73, 27, 27);
+  border-bottom: 2px solid #fff;
 }
 
 td {
@@ -475,12 +478,17 @@ tr:nth-child(even) {
 .table-container{
   font-family: 'Times New Roman', Times, serif;
   display: block;
+  padding: 20px 20px;
   font-size: 16px;
-  width:  100%;
+  width: 100%;
   background-color: #fff;
   align-content: right;
   text-align: center;
   justify-content: right;
+}
+
+.content-center{
+  margin-left: 20%;
 }
 
 .table-container h2{

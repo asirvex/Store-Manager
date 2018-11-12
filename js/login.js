@@ -20,6 +20,7 @@ function login(e){
     .then(data => {
         token = data.token;
         localStorage.setItem("token", token)
+        localStorage.setItem("user", username)
         if (username === "super_admin"){
             window.location.href = "addproduct.html"
         } else{
@@ -43,5 +44,3 @@ function login(e){
     }
 
 }
-console.log(token)
-localStorage.setItem("token", token)
