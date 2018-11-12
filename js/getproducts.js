@@ -139,15 +139,21 @@ function createSale(){
     })
     .then(handleResponse)
     .then(data => {
-        console.log(data);
+        alert(data.message)
     })
     .catch(error => {
         if (error.message === "invalid token"){
             msg = "please log in again"
         } else {
-            msg = error.message
+            if (error.message.includes("Empty input")){
+            document.getElementById("output").innerHTML = `
+            <h4 color="red">please add an item to the cart first</h4>`
+        } else {
+            document.getElementById("output").innerHTML = 
+            `<h4 color="red">${error.message}</h4>`
         }
-        console.log(msg)
+
+        }
     });
 
     function handleResponse(response) {
@@ -160,5 +166,4 @@ function createSale(){
             }
         })
     }
-    document.location.reload(true)
 }
