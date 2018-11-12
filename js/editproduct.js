@@ -99,7 +99,7 @@ function putProduct(e){
     .then(handleResponse)
     .then(data => {
         document.getElementById("add-product-title").innerHTML = 
-        `<h1>Add a New Product</h1>
+        `<h1>Edit product</h1>
         <h4 color="green">${data.message}<h4>        
         `
     })
@@ -110,7 +110,7 @@ function putProduct(e){
             msg = error.message
         }
         document.getElementById("add-product-title").innerHTML = 
-        `<h1>Add a New Product</h1>
+        `<h1>Edit Product</h1>
         <h3>${msg}<h3>        
         `
     })

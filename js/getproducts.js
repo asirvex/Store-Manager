@@ -33,7 +33,7 @@ function getAllProducts(e){
     .catch(error => {
         console.log(error)
         if (error.message === "invalid token"){
-            msg = "You must log in to access this page!"
+            msg = "You need to log in to access this page!"
             document.getElementsByTagName("body")[0].innerHTML = `
             <h1>${msg}</h1>`}
         }
