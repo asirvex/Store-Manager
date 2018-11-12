@@ -22,11 +22,11 @@
     
     <div class="sidebar">
       <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
-      <a class="active" href="#about" onclick="showAll()">All</a>
+      <a class="active" href="" onclick="showAll()">All</a>
       <a onclick="showPhones()">Phones</a>
-      <a href="#news">Clothes</a>
-      <a href="#contact">Computing</a>
-      <a href="#about">Furniture</a>
+      <a href="">Clothes</a>
+      <a href="">Computing</a>
+      <a href="">Furniture</a>
     </div>
 
   </div>
@@ -43,7 +43,6 @@
             <button class="add-btn" id="addbtn"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add</button>
             
           <div id="myModal" class="modal">
-
               <div class="modal-content">
                 <div class="modal-header">
                   <span class="close">&times;</span>
@@ -82,29 +81,17 @@
   <div class="column right">
     <div class="cart">
       <label for="item">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></label>
-        <table>
-          <th>Item</th>
-          <th>Price</th>
+      <div id="cart-edit">
+        <table id="cart-table">
           <tr>
-          <td>Item1</td>
-          <td>Ksh. 80000</td>
+              <th>product</th>
+              <th>quantity</th>
+              <th>price</th>
           </tr>
-          <tr>
-          <td>Item2</td>
-          <td>Ksh. 70000</td>
-          </tr>
-          <tr>
-              <td>Item3</td>
-              <td>Ksh. 80000</td>
-          </tr>
-          <tr id="total">
-          <td>Total</td>
-          <td>Ksh. 230000</td>
-          </tr>
-      </table>
+        </table>
+      </div>
       <p></p>
-      <button type="submit" class="cart-btn"> order items </button>
-      <button class="cart-btn" id="testing-btn">fetch</button>
+      <button id="create-sale-btn" onclick="createSale()" class="cart-btn"> order items </button>
       <div id="output"><div>
       <form>
 
