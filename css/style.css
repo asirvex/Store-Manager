@@ -619,6 +619,13 @@ tr:nth-child(even) {
   color: rgb(145, 30, 30);
   font-size: 17px;
 }
+
+#output{
+  color: rgb(145, 30, 30);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .admin-container h4{
   color: green;
   font-size: 17px;
