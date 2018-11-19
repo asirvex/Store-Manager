@@ -16,18 +16,18 @@ function getAllProducts(e){
     .then(handleResponse)
     .then(data => {
         console.log("The fetched data is", data.products[0].name)
-        output = `<div id="products" class="grid-container">`
+        output = `<div id="products" class="flex-container">`
         closetag = `</div>`
         products = data.products
         localStorage.setItem("products", products)
         products.forEach(product => {
             console.log("element ", product.name)
             output += `
-            <div class="item" id="${product.id}">
-            <img src="" alt="${product.description}" class="center" width="98%" height="100">
-            <div class="detailstext"><p> ${product.name} </br> Ksh ${product.price}</div>
-            <button class="add-btn" id="addbtn" onclick="toEdit('${product.name}')">edit</button>
-            <div>
+            <div class="item" onclick="toEdit('${product.name}')">
+            <img src="" class="center" width="98%" height="100">
+            <div class="detailstext" ><p> ${product.name}</p></div>
+            <div class="detailstext" ><p> Ksh ${product.price}</p></div>
+            </div>
             `
         })
         output = output + closetag
@@ -127,3 +127,4 @@ function putProduct(e){
     }
 
 }
+
